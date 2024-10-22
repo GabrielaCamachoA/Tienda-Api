@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <div id="productos"></div>
+
+    <div class="modal" id="mi-modal">
+        <div class="modal-container">
+            <h1 id="titulo_modal"></h1>
+            <div class="container-body">
+                <img id="imagen_modal" alt="">
+            </div>
+        <p id="p_modal"></p>
+        <p>
+            <span id="precio-modal"> </span> - <span id="cat-modal"> </span>
+        </p>
+        <span class="close">x </span>
+        </div>
+    </div>
+
+    <div class="paginador">
+        <a href="#" class="pagina-anterior" id="prev"> Anterior</a>
+        <a href="#" class="pagina" id="pag1">1</a>
+        <a href="#" class="pagina" id="pag2">2</a>
+        <a href="#" class="pagina" id="pag3">3</a>
+        <a href="#" class="pagina" id="pag4">4</a>
+        <a href="#" class="pagina-despues" id="next">Siguiente</a>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>

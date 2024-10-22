@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    text-decoration: none;
+}
+header{
+    height: 66px;
+    background-color: #2E66FF;
+}
+body{
+    background-color: #93919131;
+    margin-bottom: 20px;
+}
+#productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+}
+.producto{
+    width: 200px;
+    height: 200px;
+    display: grid;
+}
+.producto div{
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 2;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 25px;
+    opacity: 0;
+    background: linear-gradient(transparent, black);
+    transition: opacity .5s ease-in;
+}
+.producto img{
+    width: 200px;
+    height: 200px;
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 25px;
+    padding: 15px;
+    box-sizing: border-box;
+    object-fit: contain;
+    background-color: #fff;
+}
+.producto  div h1{
+    font-size: 16px;
+    color: #fff;
+    margin: 7px;
+}
+.producto div:hover{
+    opacity: 1;
+}
+.modal{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.762);
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+    top:0;
+}
+.modal h1{
+    flex-grow: 1;
+    flex-basis: 340px;
+    font-size: 22px;
+}
+.modal p{
+    font-size: 14px;
+}
+.mostrar{
+    pointer-events: all;
+    opacity: 1;
+}
+.modal-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    line-height: 50px;
+    padding-right: 12px;
+    cursor: pointer;
+}
+#imagen_modal{
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+}
+a{
+    color: #000;
+}
+.paginador{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1pc;
+}
+.pagina, .pagina-anterior, .pagina-despues{
+    border-radius: 4px;
+    padding: 4px 12px;
+    background-color: #fff;
+    transition: .2s;
+}
+.pagina:hover, .pagina-anterior:hover, .pagina-despues:hover{
+    color: #fff;
+    background-color: #2E66FF;
+    border: none;
+}
